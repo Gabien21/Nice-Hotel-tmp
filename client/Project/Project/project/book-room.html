@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Room</title>
+    <link rel="stylesheet" href="book-room.css">
+</head>
+<body>
+    <header>
+        <h1>Book your stay</h1>
+    </header>
+
+    <section id="booking-form">
+        <h2>Please fill out the booking form below</h2>
+        <form action="available-room.html" method="post">
+            <label for="check-in">Check-in Date:</label>
+            <input type="date" id="check-in" name="check-in" required>
+
+            <label for="check-out">Check-out Date:</label>
+            <input type="date" id="check-out" name="check-out" required>
+
+            <label for="adults">Number of adults:</label>
+            <div class="number-input">
+                <button onclick="decrement('adults')">-</button>
+                <input type="text" id="adults" name="adults" value="1" readonly>
+                <button onclick="increment('adults')">+</button>
+            </div>
+
+            <label for="children">Number of children:</label>
+            <div class="number-input">
+                <button onclick="decrement('children')">-</button>
+                <input type="text" id="children" name="children" value="0" readonly>
+                <button onclick="increment('children')">+</button>
+            </div>
+
+            <input type="submit" value="Book now">
+        </form>
+    </section>
+
+    <script>
+        function increment(id) {
+            var input = document.getElementById(id);
+            input.value = parseInt(input.value) + 1;
+        }
+
+        function decrement(id) {
+            var input = document.getElementById(id);
+            if (parseInt(input.value) > 0) {
+                input.value = parseInt(input.value) - 1;
+            }
+        }
+    </script>
+</body>
+</html>

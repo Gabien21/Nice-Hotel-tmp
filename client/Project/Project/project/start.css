@@ -1,0 +1,48 @@
+.log {
+    background-image: url(./img/white_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px; 
+}
+
+.text {
+    font-size: 70px;
+    color: black;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.button {
+    width: 210px;
+    height: 200px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 70px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: orange;
+}

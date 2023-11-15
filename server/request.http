@@ -1,0 +1,16 @@
+POST http://localhost:5000/api/auth/register_staff
+Content-Type: application/json
+
+{
+    "email": "toan@gmail.com",
+    "password": "toan"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "toan@gmail.com",
+    "password": "toa"
+}

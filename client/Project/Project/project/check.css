@@ -1,0 +1,116 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#booking-details, #payment {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 auto;
+    display: block;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+input[type="submit"]:active {
+    transform: scale(0.95);
+}
+
+li {
+    margin: 10px 0;
+}
+
+img {
+    width: 100px; 
+    height: 80px; 
+    vertical-align: middle;
+}
+
+h3 {
+    font-weight: normal;
+    display: inline-block;
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.coupon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.payment-method h3 {
+    display: inline-block;
+    font-weight: normal;
+    display: inline-block;
+}
+
+.r {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+label {
+    display: inline-block;
+    margin: 5px 0;
+    font-size: 22px;
+}
+
+
+

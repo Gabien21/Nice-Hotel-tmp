@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="check.css">
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+
+    <section id="booking-details">
+        <h2>Your Booking Details</h2>
+        <p>Room: Type 1</p>
+        <p>Check-in Date: October 15, 2023</p>
+        <p>Check-out Date: October 20, 2023</p>
+        <p>Total Price: $1000</p>
+    </section>
+
+    <section id="payment">
+        <h2>Payment Information</h2>
+        <form action="confirm.html" method="post">
+            <label for="number">Citizen identification card number:</label>
+            <input type="text" id="number" name="number" required>
+
+            <label for="number">Citizen identification card number:</label>
+            <input type="text" id="number" name="number" required>
+
+            <label for="coupons">Coupons (Choose 1 of these coupons):</label>
+                <div class="coupon">
+                    <h3>20% off</h3>
+                    <input type="radio" id="coupon" name="coupon" value="percent">
+                </div>
+                <div class="coupon">
+                    <h3>500.000 VietNam Dong off</h3>
+                    <input type="radio" id="coupon" name="coupon" value="money">
+                </div>
+                <div class="coupon">
+                    <h3>A special gift from hotel</h3>
+                    <input type="radio" id="coupon" name="coupon" value="gift">
+                </div>
+
+            <label for="Payment method">Payment method:</label>
+                <div class="payment-method">
+                    <img src="img/creditcard.jpg" alt="">
+                    <input type="radio" id="paymentmethod" name="paymentmethod" value="credit-card">
+                </div>
+                <div class="payment-method">
+                    <img src="img/applepay.jpg" alt="">
+                    <input type="radio" id="paymentmethod" name="paymentmethod" value="credit-card">
+                </div>
+                <div class="payment-method">
+                    <img src="img/momo.png" alt="">
+                    <input type="radio" id="paymentmethod" name="paymentmethod" value="credit-card">
+                </div>
+
+                <div class="payment-method">
+                    <img src="img/zalopay.png" alt="">
+                    <input type="radio" id="paymentmethod" name="paymentmethod" value="credit-card">
+                </div>
+
+
+                <input type="submit" value="Complete Booking">
+        </form>
+    </section>
+</body>
+</html>

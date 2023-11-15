@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="about.css">
+  <title>About and Contact</title>
+</head>
+<body>
+  <div class="header">
+    <div class="navbar">
+      <div class="logo"><a href="index.html">Nice H&R</a></div>
+      <ul class="links">
+        <li><a href="index.html">Hotel</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="dining.html">Menu</a></li>
+        <li><a href="about.html">About and Contact</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+      <a href="book.html" class="action-btn">Book Now</a>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i> 
+      </div>
+
+      <div class="dropdown-menu">
+        <li><a href="index.html">Hotel</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="dining.html">Menu</a></li>
+        <li><a href="about.html">About and Contact</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li class="action-btn"><a href="book.html">Book Now</a></li>
+      </div>
+    </div>
+  </div>
+  <div class="contact-container">
+    <section id="contact-info">
+      <h1>Contact Information</h1>
+        <address>
+          <h2><strong>Nice Hotel and Restaurant</strong></h2>
+          <p>1 Nguyen Van Cu Street</p>
+          <p>District 1, Ho Chi Minh city</p>
+          <p>Phone: (94) 123-456-789</p>
+          <p>Email: nicehotelandrestaurant@gmail.com</p>
+          <img src="./img/signature.png" alt="">
+        </address>
+    </section>
+      <section id="contact-form">
+        <h1>Get in Touch</h1>
+        <form action="submit.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="3" required></textarea>
+
+          <input type="submit" value="Send">
+        </form>
+    </section>
+  </div>
+  <div class="footer"></div>
+  <script src="function.js"></script>
+</body>
+</html>
