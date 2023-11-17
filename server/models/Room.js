@@ -3,11 +3,11 @@ const Schema = mongoose.Schema
 
 const RoomSchema = new Schema({
     room_type: {
-        type: Number,
+        type: String,
         required: true
     },
     room_number: {
-        type: Number,
+        type: String,
         required: true
     },
     description: {
@@ -15,7 +15,8 @@ const RoomSchema = new Schema({
     },
     state: {
         type: String,
-        enum: ['true', 'false']
+        enum: ['true', 'false'],
+        required: true
     },
     price: {
         type: Number,
