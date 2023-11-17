@@ -1,0 +1,280 @@
+========================================GUEST=========================================================
+POST http://localhost:5000/api/auth/register_guest
+Content-Type: application/json
+
+{
+    "email": "toan@gmail.com",
+    "password": "toan",
+    "full_name": "Phạm Khánh Toàn",
+    "phone_number": "0399699590",
+    "address": "Biên Hòa",
+    "birthday": "2003-09-19",
+    "user_id": "123456789874"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "toan@gmail.com",
+    "password": "toan"
+}
+
+###
+GET http://localhost:5000/api/user/info
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTU3MjAwYzA1ZmQ2MzE2OWNjYzgyODEiLCJpYXQiOjE3MDAyMTA2OTB9.9OkVuK1AFmhJN67O_rAg-LHgHvkpyOJZctRpEbx9fY0
+
+############
+
+_id: 655731e5c6f4306ec45f688c
+email: "toan@gmail.com"
+password: "$argon2id$v=19$m=65536,t=3,p=4$GOxm/sqPtWyfaOAHm6weIA$5/pUaN2vZUqX1iQK…"
+full_name: "Phạm Khánh Toàn"
+phone_number: "0399699590"
+address: "Biên Hòa"
+birthday: 2003-09-19T00:00:00.000+00:00
+user_id: "123456789874"
+role: "Guest"
+money: 0
+createAt: 2023-11-17T09:27:01.028+00:00
+__v: 0
+*****************************************************************************************************
+POST http://localhost:5000/api/auth/register_guest
+Content-Type: application/json
+
+{
+    "email": "tien@gmail.com",
+    "password": "tien",
+    "full_name": "Lê Phước Thịnh Tiến",
+    "phone_number": "0999999999",
+    "address": "Đà Nẵng",
+    "birthday": "2003-11-20",
+    "user_id": "123456789874"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "tien@gmail.com",
+    "password": "tien"
+}
+
+###
+GET http://localhost:5000/api/user/info
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTU3MzFmOGM2ZjQzMDZlYzQ1ZjY4OGYiLCJpYXQiOjE3MDAyMTMzOTZ9.s-eX1yEg4GpSrIZAzNND4BNKhwbP9TUxA0fox-vg61s
+
+#############################################
+_id: 655731f8c6f4306ec45f688f
+email: "tien@gmail.com"
+password: "$argon2id$v=19$m=65536,t=3,p=4$0Gks5MAHYhtoavnJ+i6Fnw$8qBvP8txJP2knVhP…"
+full_name: "Lê Phước Thịnh Tiến"
+phone_number: "0999999999"
+address: "Đà Nẵng"
+birthday: 2003-11-20T00:00:00.000+00:00
+user_id: "123456789874"
+role: "Guest"
+money: 0
+createAt: 2023-11-17T09:27:20.949+00:00
+__v: 0
+*****************************************************************************************************
+POST http://localhost:5000/api/auth/register_guest
+Content-Type: application/json
+
+{
+    "email": "nam@gmail.com",
+    "password": "nam",
+    "full_name": "Phan Phước Hải Nam",
+    "phone_number": "0777777777",
+    "address": "Sài Gòn",
+    "birthday": "2003-11-31",
+    "user_id": "123456789874"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "nam@gmail.com",
+    "password": "nam"
+}
+
+###
+GET http://localhost:5000/api/user/info
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTU3MzMzMWM2ZjQzMDZlYzQ1ZjY4OTUiLCJpYXQiOjE3MDAyMTM1Njh9.QjgAzjwXnGvocjAbRpz-5Zi4jXP6zH52vrfrhVnXoVM
+#############################################
+_id: 65573331c6f4306ec45f6895
+email: "nam@gmail.com"
+password: "$argon2id$v=19$m=65536,t=3,p=4$5iAhQrz7iIARltH0QJv3ag$t+oRvb3IqRUZGM3O…"
+full_name: "Phan Phước Hải Nam"
+phone_number: "0777777777"
+address: "Sài Gòn"
+birthday: 2003-12-01T00:00:00.000+00:00
+user_id: "123456789874"
+role: "Guest"
+money: 0
+createAt: 2023-11-17T09:32:33.114+00:00
+__v: 0
+===============================================STAFF==================================================
+POST http://localhost:5000/api/auth/register_staff
+Content-Type: application/json
+
+{
+    "email": "thao@gmail.com",
+    "password": "thao",
+    "full_name": "Ngô Thị Thanh Thảo",
+    "phone_number": "033333333",
+    "address": "Sài Gòn",
+    "birthday": "2003-12-31",
+    "user_id": "123456789874"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "thao@gmail.com",
+    "password": "thao"
+}
+
+###
+GET http://localhost:5000/api/user/info
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTU3MzQwYWM2ZjQzMDZlYzQ1ZjY4OWIiLCJpYXQiOjE3MDAyMTM3NzV9.Wrg2gLrQU4RypNlEnbGOUeKF7K0Q5acJQysIE-ZpfWc
+
+#############################################
+
+_id: 6557340ac6f4306ec45f689b
+email: "thao@gmail.com"
+password: "$argon2id$v=19$m=65536,t=3,p=4$fHOIcPB0qXQJVSmCfiviHw$hFVqxWbLyz6A7kaG…"
+full_name: "Ngô Thị Thanh Thảo"
+phone_number: "033333333"
+address: "Sài Gòn"
+birthday: 2003-12-31T00:00:00.000+00:00
+user_id: "123456789874"
+role: "Staff"
+money: 0
+createAt: 2023-11-17T09:36:10.536+00:00
+__v: 0
+*****************************************************************************************************
+POST http://localhost:5000/api/auth/register_staff
+Content-Type: application/json
+
+{
+    "email": "minh@gmail.com",
+    "password": "minh",
+    "full_name": "Huỳnh Cao Minh",
+    "phone_number": "0222222222",
+    "address": "Củ Chi",
+    "birthday": "2003-1-1",
+    "user_id": "123456789874"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "minh@gmail.com",
+    "password": "minh"
+}
+
+###
+GET http://localhost:5000/api/user/info
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTU3MzRlNmM2ZjQzMDZlYzQ1ZjY4YTAiLCJpYXQiOjE3MDAyMTM5OTJ9.HXBCUN4Rt_z23ns3Wr4iEVwM87Ic-3qwhkoWqHYb7DY
+#############################################
+_id: 655734e6c6f4306ec45f68a0
+email: "minh@gmail.com"
+password: "$argon2id$v=19$m=65536,t=3,p=4$hrCkm5DINS9Wc3/wquh5Ng$jFklTeZHySMzZFBN…"
+full_name: "Huỳnh Cao Minh"
+phone_number: "0222222222"
+address: "Củ Chi"
+birthday: 2002-12-31T17:00:00.000+00:00
+user_id: "123456789874"
+role: "Staff"
+money: 0
+createAt: 2023-11-17T09:39:50.162+00:00
+__v: 0
+
+==============================================BUSINESS ADMIN==========================================
+POST http://localhost:5000/api/auth/register_Business_Admin
+Content-Type: application/json
+
+{
+    "email": "business_admin@gmail.com",
+    "password": "bien",
+    "full_name": "Mai Hoàng Biên",
+    "phone_number": "0111111111",
+    "address": "Đồng Nai",
+    "birthday": "1985-1-1",
+    "user_id": "123456789874"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "business_admin@gmail.com",
+    "password": "bien"
+}
+
+###
+GET http://localhost:5000/api/user/info
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTU3MzVlN2M2ZjQzMDZlYzQ1ZjY4YTUiLCJpYXQiOjE3MDAyMTQyNTJ9.qq46IO2uMl90aXThoZGgjfHcXEKfIHXVJlSQLWYh174
+#############################################
+_id: 655735e7c6f4306ec45f68a5
+email: "business_admin@gmail.com"
+password: "$argon2id$v=19$m=65536,t=3,p=4$ljHycFcdEu6Ub9cfOT45mg$fwshuxROLO9+1yZs…"
+full_name: "Mai Hoàng Biên"
+phone_number: "0111111111"
+address: "Đồng Nai"
+birthday: 1984-12-31T17:00:00.000+00:00
+user_id: "123456789874"
+role: "Business_Admin"
+money: 0
+createAt: 2023-11-17T09:44:07.575+00:00
+__v: 0
+===========================================SYSTEM ADMIN===============================================
+###
+POST http://localhost:5000/api/auth/register_System_Admin
+Content-Type: application/json
+
+{
+    "email": "system_admin@gmail.com",
+    "password": "len",
+    "full_name": "Bùi Tiến Lên",
+    "phone_number": "066666666",
+    "address": "Sài Gòn",
+    "birthday": "1980-2-2",
+    "user_id": "123456789874"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "system_admin@gmail.com",
+    "password": "len"
+}
+
+###
+GET http://localhost:5000/api/user/info
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTU3MzY5ZGM2ZjQzMDZlYzQ1ZjY4YWEiLCJpYXQiOjE3MDAyMTQ0MzF9.Px_EGo3SiBo6WW9En5YGOTSCVVhvAQCrURwQbL3N_vE
+#############################################
+_id: 6557369dc6f4306ec45f68aa
+email: "system_admin@gmail.com"
+password: "$argon2id$v=19$m=65536,t=3,p=4$PO0vfkqqW95JkeWyOtAZTQ$d2KPC6u4ARcbVUsZ…"
+full_name: "Bùi Tiến Lên"
+phone_number: "066666666"
+address: "Sài Gòn"
+birthday: 1980-02-01T17:00:00.000+00:00
+user_id: "123456789874"
+role: "System_Admin"
+money: 0
+createAt: 2023-11-17T09:47:09.706+00:00
+__v: 0

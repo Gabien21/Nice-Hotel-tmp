@@ -1,9 +1,42 @@
+POST http://localhost:5000/api/auth/register_guest
+Content-Type: application/json
+
+{
+    "email": "nam@gmail.com",
+    "password": "nam",
+    "full_name": "Phan Phước Hải Nam",
+    "phone_number": "0777777777",
+    "address": "Sài Gòn",
+    "birthday": "2003-11-31",
+    "user_id": "123456789874"
+}
+
+###
 POST http://localhost:5000/api/auth/register_staff
 Content-Type: application/json
 
 {
-    "email": "toan@gmail.com",
-    "password": "toan"
+    "email": "minh@gmail.com",
+    "password": "minh",
+    "full_name": "Huỳnh Cao Minh",
+    "phone_number": "0222222222",
+    "address": "Củ Chi",
+    "birthday": "2003-1-1",
+    "user_id": "123456789874"
+}
+
+###
+POST http://localhost:5000/api/auth/register_System_Admin
+Content-Type: application/json
+
+{
+    "email": "system_admin@gmail.com",
+    "password": "len",
+    "full_name": "Bùi Tiến Lên",
+    "phone_number": "066666666",
+    "address": "Sài Gòn",
+    "birthday": "1980-2-2",
+    "user_id": "123456789874"
 }
 
 ###
@@ -11,6 +44,10 @@ POST http://localhost:5000/api/auth/login
 Content-Type: application/json
 
 {
-    "email": "toan@gmail.com",
-    "password": "toa"
+    "email": "system_admin@gmail.com",
+    "password": "len"
 }
+
+###
+GET http://localhost:5000/api/user/info
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTU3MzY5ZGM2ZjQzMDZlYzQ1ZjY4YWEiLCJpYXQiOjE3MDAyMTQ0MzF9.Px_EGo3SiBo6WW9En5YGOTSCVVhvAQCrURwQbL3N_vE
