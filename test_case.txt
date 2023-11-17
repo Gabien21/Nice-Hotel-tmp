@@ -264,7 +264,7 @@ Content-Type: application/json
 
 ###
 GET http://localhost:5000/api/user/info
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTU3MzY5ZGM2ZjQzMDZlYzQ1ZjY4YWEiLCJpYXQiOjE3MDAyMTQ0MzF9.Px_EGo3SiBo6WW9En5YGOTSCVVhvAQCrURwQbL3N_vE
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTU3Mzk4MWM2ZjJkOWMxMWNlMmY5MGMiLCJpYXQiOjE3MDAyMTUxODN9.nw_6L-Hklwl1dmPvttfcE_kDA3bzarCD9OC6fcI259o
 #############################################
 _id: 6557369dc6f4306ec45f68aa
 email: "system_admin@gmail.com"
